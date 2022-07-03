@@ -36,7 +36,7 @@ public class Order implements Serializable{
 	private OrderStatus status;
 	
 	@ManyToMany
-	@JoinTable(name = "tb_order_product",
+	@JoinTable(name = "tb_order_item",
 		joinColumns = @JoinColumn(name = "order_id"),
 		inverseJoinColumns = @JoinColumn(name = "product_id"))
 
